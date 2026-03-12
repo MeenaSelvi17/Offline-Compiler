@@ -1,9 +1,9 @@
-Offline Java Compiler
-Overview
+**Offline Java Compiler**
+**Overview**
 
 Offline Java Compiler is a Java Swing desktop app that lets you write, compile, run, and save Java programs offline. Programs are stored in PostgreSQL using JDBC.
 
-Features
+**Features**
 
 Write Java code in a built-in editor
 
@@ -11,7 +11,7 @@ Compile and run programs locally
 
 Save programs to a PostgreSQL database
 
-Technologies
+**Technologies**
 
 Java Swing (UI)
 
@@ -27,7 +27,7 @@ Install Java JDK 17+ and PostgreSQL
 
 Add postgresql-42.7.10.jar in the project folder
 
-Create programs table in PostgreSQL:
+**Create programs table in PostgreSQL:**
 
 CREATE TABLE programs(
     id SERIAL PRIMARY KEY,
@@ -38,7 +38,7 @@ CREATE TABLE programs(
 
 Update DBConnection.java with your username/password.
 
-Compile & run:
+**Compile & run:**
 
 javac -cp ".;postgresql-42.7.10.jar" DBConnection.java CompilerUI.java
 java -cp ".;postgresql-42.7.10.jar" CompilerUI
